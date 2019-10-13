@@ -1,0 +1,22 @@
+//
+// Layout
+//
+
+// Float container
+@mixin float-container {
+    &::after {
+        clear: both;
+        content: "";
+        display: block;
+    }
+}
+
+// Page section wrapper
+.page-wrap {
+    @include float-container;
+
+    margin: 0 auto;
+    max-width: 60rem;
+    padding: 0 1em;
+    position: relative;
+}
