@@ -1,13 +1,21 @@
-.owl-carousel-wrap {
+.carousel-type-title {
+    text-align: center;
+    margin: 1rem auto;
+
+    @include media-query(normal) {
+        margin: 1.5rem auto;
+    }
+}
+
+.carousel {
 
     margin: auto;
 
-    >.slide {
+    .slide {
 
-        max-width: 300px;
         border: 1px solid #CCC;
 
-        >.title {
+        .title {
             font-weight: bold;
             padding: .5rem;
         }
@@ -16,7 +24,7 @@
             padding: .5rem;
         }
 
-        >.button-link {
+        .button-link {
             background-color: darken(aquamarine, 40%);
             color: #FFF;
             text-decoration: none;
@@ -24,7 +32,7 @@
             display: block;
             text-align: center;
             max-width: 112px;
-            margin: auto;
+            margin: 0 auto .5rem auto;
             transition: background-color, .15s;
 
             &:hover {
