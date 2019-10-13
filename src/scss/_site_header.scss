@@ -1,0 +1,14 @@
+.banner {
+
+    padding: 4rem;
+    margin: 0;
+    text-align: center;
+
+    &.-owl-carousel-banner {
+
+        background-color: darken(aquamarine, 20%);
+        color: #000;
+
+    }
+
+}
