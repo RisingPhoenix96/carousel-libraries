@@ -46,22 +46,23 @@
 
         .carousel-control {
 
+            width: 42px;
+            height: 42px;
+            border: 0;
+            background-color: darken(aquamarine, 40%);
+            color: #FFF;
+            transition: background-color, .15s;
+
+            &:hover {
+                background-color: darken(aquamarine, 50%);
+            }
+
             @include media-query(normal) {
                 position: absolute;
                 top: 47%;
-                background-color: darken(aquamarine, 40%);
-                color: #FFF;
-                border: 0;
-                width: 42px;
-                height: 42px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                transition: background-color, .15s;
-
-                &:hover {
-                    background-color: darken(aquamarine, 50%);
-                }
             }
 
         }
