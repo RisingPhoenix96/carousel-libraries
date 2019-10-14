@@ -63,7 +63,7 @@ include "../includes/header.php"
 
     <h2 class="carousel-type-title">Centered Carousel</h2>
 
-    <div class="carousel centered-carousel-wrap owl-carousel owl-theme">
+    <div class="carousel centered-carousel-wrap -side-arrows owl-carousel owl-theme">
 
         <div class="slide">
             <img class="image" src="https://picsum.photos/300/200?random=1"></img>

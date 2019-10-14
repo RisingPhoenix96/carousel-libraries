@@ -27,7 +27,7 @@ $(function () {
         margin: 10,
         nav: true,
         center: true,
-        navText: ["<button class='centered-carousel-prev'>Prev</button>", "<button class='centered-carousel-next'>Next</button>"],
+        navText: ["<button class='carousel-control centered-carousel-prev prev'>&#9664;</button>", "<button class='carousel-control centered-carousel-next next'>&#9654;</button>"],
 
         responsive: {
             0: {
