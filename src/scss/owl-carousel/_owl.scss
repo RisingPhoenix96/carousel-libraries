@@ -7,6 +7,18 @@
     }
 }
 
+.standard-slider-wrap {
+
+    max-width: 300px;
+
+    .slide {
+
+        max-width: 300px;
+
+    }
+
+}
+
 .carousel {
 
     margin: auto;
@@ -70,7 +82,7 @@
         .carousel-control.prev {
 
             @include media-query(normal) {
-                left: -19px;
+                left: -42px;
             }
 
         }
@@ -78,7 +90,7 @@
         .carousel-control.next {
 
             @include media-query(normal) {
-                right: -19px;
+                right: -42px;
             }
 
         }

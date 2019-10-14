@@ -2,6 +2,16 @@ $(function () {
 
     // Standard carousel
 
+    $('.standard-slider-wrap').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        items: 1,
+        navText: ["<button class='carousel-control centered-carousel-prev prev'>&#9664;</button>", "<button class='carousel-control centered-carousel-next next'>&#9654;</button>"],
+    });
+
+    // Standard carousel
+
     $('.standard-carousel-wrap').owlCarousel({
         loop: true,
         margin: 10,
