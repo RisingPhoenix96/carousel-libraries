@@ -51,3 +51,74 @@ $(function () {
     });
 
 });
+
+$(function () {
+
+    // Centred carousel
+    const tnsCenteredCarousel = tns({
+
+        container: '.tiny-centered-carousel-wrap',
+        items: 1,
+        loop: true,
+        nav: true,
+        navPosition: 'bottom',
+        mouseDrag: true,
+        arrowKeys: false,
+        touch: true,
+        controls: true,
+        //controlsPosition: 'bottom',
+        //controlsText: ['prev', 'next'],
+        controlsContainer: '.tns-centered-carousel-controls',
+        //autoplayPosition: 'bottom',
+        center: true,
+        //gutter: 5,
+
+        responsive: {
+            640: {
+                items: 2
+            },
+            960: {
+                items: 1,
+                edgePadding: 230,
+            }
+        }
+
+    });
+
+});
+
+$(function () {
+
+    // Centred carousel
+    const tnsLazyCarousel = tns({
+
+        container: '.tiny-lazy-carousel-wrap',
+        items: 1,
+        loop: true,
+        nav: true,
+        navPosition: 'bottom',
+        mouseDrag: true,
+        arrowKeys: false,
+        touch: true,
+        controls: true,
+        //controlsPosition: 'bottom',
+        //controlsText: ['prev', 'next'],
+        controlsContainer: '.tns-lazy-carousel-controls',
+        //autoplayPosition: 'bottom',
+        center: true,
+        lazyload: true,
+        //"lazyloadSelector": ".tns-lazy",
+
+        responsive: {
+            640: {
+                items: 2
+            },
+            960: {
+                items: 1,
+                edgePadding: 230,
+            }
+        }
+
+    });
+
+});
