@@ -1,0 +1,60 @@
+#tiny-slider>.wrapper {
+
+    position: relative;
+
+}
+
+#tiny-slider .controls {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include media-query(micro) {
+        position: absolute;
+        top: 42%;
+        left: 0;
+        right: 0;
+    }
+
+    .carousel-control {
+
+        width: 42px;
+        height: 42px;
+        border: 0;
+        background-color: darken(aquamarine, 40%);
+        color: #FFF;
+        transition: background-color, .15s;
+
+        &:hover {
+            background-color: darken(aquamarine, 50%);
+        }
+
+        @include media-query(normal) {
+            position: absolute;
+            top: 47%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+
+    .carousel-control.prev {
+
+        @include media-query(normal) {
+            left: -42px;
+        }
+
+    }
+
+    .carousel-control.next {
+
+        @include media-query(normal) {
+            right: -42px;
+        }
+
+    }
+
+}

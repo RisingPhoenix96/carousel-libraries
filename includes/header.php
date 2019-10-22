@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="/assets/carousel/owl.theme.default.min.css">
+    <script src="/content/jquery.js"></script>
 </head>
 
 <body <?php if (isset($page_info['body_id'])) {

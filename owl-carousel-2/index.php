@@ -31,4 +31,6 @@ include "../includes/header.php"
 
 </div>
 
+<script src="/owl-carousel-2/owl-slide.js"></script>
+
 <?php include "../includes/footer.php" ?>

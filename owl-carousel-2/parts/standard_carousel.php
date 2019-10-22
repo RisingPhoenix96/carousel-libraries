@@ -1,4 +1,4 @@
-<div class="carousel standard-carousel-wrap owl-carousel owl-theme">
+<div class="carousel owl-carousel standard-carousel-wrap owl-theme">
 
     <div class="slide">
         <img class="image" src="https://picsum.photos/300/200?random=1"></img>

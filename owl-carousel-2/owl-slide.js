@@ -2,7 +2,7 @@ $(function () {
 
     // Standard carousel
 
-    $('.standard-slider-wrap').owlCarousel({
+    $('.owl-carousel.standard-slider-wrap').owlCarousel({
         loop: true,
         margin: 10,
         nav: true,
