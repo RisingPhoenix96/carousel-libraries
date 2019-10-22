@@ -58,3 +58,11 @@
     }
 
 }
+
+#tiny-slider .carousel .slide {
+
+    @include media-query(micro) {
+        margin: 0 7px 0 7px;
+    }
+
+}
