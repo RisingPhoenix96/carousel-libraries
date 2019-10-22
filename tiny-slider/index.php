@@ -15,7 +15,7 @@ include "../includes/header.php"
 
     <h2 class="carousel-type-title">Standard Slider</h2>
 
-    <?php //include "./parts/standard_slide.php"; 
+    <?php include "./parts/standard_slide.php";
     ?>
 
     <h2 class="carousel-type-title">Standard Carousel</h2>
