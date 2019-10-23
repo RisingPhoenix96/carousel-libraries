@@ -6,3 +6,37 @@
 * {
     box-sizing: border-box;
 }
+
+.intro-wrapper {
+    @include media-query(micro) {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100vh;
+    }
+
+    a {
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        background-color: darken(aquamarine, 40%);
+        color: #000;
+        padding: 6rem;
+        text-align: center;
+        font-weight: 600;
+        transition: all .25s;
+        border: 1px solid #FFF;
+
+        @include media-query(micro) {
+            max-width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        &:hover {
+            background-color: darken(aquamarine, 60%);
+            color: #FFF;
+        }
+    }
+}
