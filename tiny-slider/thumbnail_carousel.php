@@ -64,10 +64,10 @@ include './parts/tiny_slider_nav.php';
         <img class="image" src="https://via.placeholder.com/200x200.png?text=6" alt="6">
     </div>
 
-    <!-- <div class="controls tns-thumbnail-carousel-controls">
+    <div class="controls tns-thumbnail-carousel-controls">
         <button class="carousel-control centered-carousel-prev prev">◀</button>
         <button class="carousel-control centered-carousel-next next">▶</button>
-    </div> -->
+    </div>
 
     <div class="tiny-custom-thumbnails-wrapper"></div>
 </div>
@@ -97,6 +97,7 @@ include './parts/tiny_slider_nav.php';
                     items: 2
                 },
                 960: {
+                    controls: true,
                     items: 1,
                     edgePadding: 230,
                 }
@@ -113,6 +114,25 @@ include './parts/tiny_slider_nav.php';
             controls: false,
             gutter: 5,
 
+            responsive: {
+                640: {
+                    items: 4,
+                },
+                960: {
+                    items: 6,
+                }
+            }
+
+        });
+
+        let prev = $("[data-controls='prev']"),
+            next = $("[data-controls='next']");
+
+        prev.on('click', function() {
+            thumbnails.goTo('prev');
+        });
+        next.on('click', function() {
+            thumbnails.goTo('next');
         });
 
     });
