@@ -1,8 +1,10 @@
 <?php
-include './parts/heading.php';
+include './parts/header.php';
 
 include './parts/tiny_slider_nav.php';
 ?>
+
+<h2 class="carousel-type-title">Standard Carousel</h2>
 
 <div class="wrapper">
     <div class="carousel -side-arrows tiny-standard-carousel-wrap">

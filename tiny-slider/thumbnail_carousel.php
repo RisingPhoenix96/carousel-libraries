@@ -1,49 +1,51 @@
 <?php
-include './parts/heading.php';
+include './parts/header.php';
 
 include './parts/tiny_slider_nav.php';
 ?>
+
+<h2 class="carousel-type-title">Thumbnail Carousel</h2>
 
 <div class="wrapper">
     <div class="carousel -side-arrows tiny-thumbnail-carousel-wrap">
 
         <div class="slide">
-            <img class="image tns-lazy-img" src="https://picsum.photos/500/200?random=1" data-src="https://picsum.photos/500/200?random=1"></img>
+            <img class="image" src="https://picsum.photos/500/200?random=1"></img>
             <p class="title">Title 1</p>
             <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus pariatur nam asperiores tenetur iste sit. Repellendus voluptatem odio ipsa quisquam ullam quis.</p>
             <a href="#" class="button-link">Read More</a>
         </div>
 
         <div class="slide">
-            <img class="image tns-lazy-img" src="https://picsum.photos/500/200?random=2" data-src="https://picsum.photos/500/200?random=2"></img>
+            <img class="image" src="https://picsum.photos/500/200?random=2"></img>
             <p class="title">Title 2</p>
             <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus pariatur nam asperiores tenetur iste sit. Repellendus voluptatem odio ipsa quisquam ullam quis.</p>
             <a href="#" class="button-link">Read More</a>
         </div>
 
         <div class="slide">
-            <img class="image tns-lazy-img" src="https://picsum.photos/500/200?random=3" data-src="https://picsum.photos/500/200?random=3"></img>
+            <img class="image" src="https://picsum.photos/500/200?random=3"></img>
             <p class="title">Title 3</p>
             <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus pariatur nam asperiores tenetur iste sit. Repellendus voluptatem odio ipsa quisquam ullam quis.</p>
             <a href="#" class="button-link">Read More</a>
         </div>
 
         <div class="slide">
-            <img class="image tns-lazy-img" src="https://picsum.photos/500/200?random=4" data-src="https://picsum.photos/500/200?random=4"></img>
+            <img class="image" src="https://picsum.photos/500/200?random=4"></img>
             <p class="title">Title 4</p>
             <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus pariatur nam asperiores tenetur iste sit. Repellendus voluptatem odio ipsa quisquam ullam quis.</p>
             <a href="#" class="button-link">Read More</a>
         </div>
 
         <div class="slide">
-            <img class="image tns-lazy-img" src="https://picsum.photos/500/200?random=5" data-src="https://picsum.photos/500/200?random=5"></img>
+            <img class="image" src="https://picsum.photos/500/200?random=5"></img>
             <p class="title">Title 5</p>
             <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus pariatur nam asperiores tenetur iste sit. Repellendus voluptatem odio ipsa quisquam ullam quis.</p>
             <a href="#" class="button-link">Read More</a>
         </div>
 
         <div class="slide">
-            <img class="image tns-lazy-img" src="https://picsum.photos/500/200?random=6" data-src="https://picsum.photos/500/200?random=6"></img>
+            <img class="image" src="https://picsum.photos/500/200?random=6"></img>
             <p class="title">Title 6</p>
             <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus pariatur nam asperiores tenetur iste sit. Repellendus voluptatem odio ipsa quisquam ullam quis.</p>
             <a href="#" class="button-link">Read More</a>
@@ -83,16 +85,12 @@ include './parts/tiny_slider_nav.php';
             navContainer: '.tiny-thumbnail-carousel-thumbnail-wrap',
             navAsThumbnails: true,
             navPosition: 'bottom',
-            mouseDrag: true,
+            mouseDrag: false,
             arrowKeys: false,
             touch: true,
-            controls: true,
-            //controlsPosition: 'bottom',
-            //controlsText: ['prev', 'next'],
+            controls: false,
             controlsContainer: '.tns-thumbnail-carousel-controls',
-            //autoplayPosition: 'bottom',
             center: true,
-            lazyload: true,
 
             responsive: {
                 640: {
@@ -106,13 +104,15 @@ include './parts/tiny_slider_nav.php';
 
         });
 
-        const tnsThumbnailCarouselThumbnails = tns({
+        var thumbnails = tns({
             loop: false,
             container: '.tiny-thumbnail-carousel-thumbnail-wrap',
             items: 6,
             mouseDrag: true,
             nav: false,
             controls: false,
+            gutter: 5,
+
         });
 
     });

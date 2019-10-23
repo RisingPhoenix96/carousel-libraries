@@ -84,3 +84,20 @@
     }
 
 }
+
+#tiny-slider .tiny-thumbnail-carousel-thumbnail-wrap {
+
+    .tns-item {
+        opacity: .25;
+        transition: opacity, .25s;
+
+        &:hover {
+            opacity: .75;
+        }
+    }
+
+    .tns-slide-active.tns-nav-active {
+        opacity: 1;
+    }
+
+}

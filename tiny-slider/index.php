@@ -1,5 +1,5 @@
 <?php
-include './parts/heading.php';
+include './parts/header.php';
 
 include './parts/tiny_slider_nav.php';
 ?>
