@@ -5,7 +5,7 @@ $page_info = array(
     'body_id' => 'owl-carousel',
 );
 
-include "../includes/header.php"
+include "../includes/header.php";
 
 ?>
 
