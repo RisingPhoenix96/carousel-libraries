@@ -65,6 +65,12 @@ include './parts/tiny_slider_nav.php';
         // Standard carousel
         const tnsStandardCarousel = tns({
 
+            autoplay: true,
+            autoplayButtonOutput: false,
+            autoplayTimeout: 6000,
+            autoplayHoverPause: true,
+            speed: 1200,
+            slideBy: 'page', //number of items to slide = number of slides displayed / number of items in the pager
             container: '.tiny-standard-carousel-wrap',
             items: 1,
             loop: true,
@@ -74,13 +80,8 @@ include './parts/tiny_slider_nav.php';
             arrowKeys: false,
             touch: true,
             controls: true,
-            //controlsPosition: 'bottom',
-            //controlsText: ['prev', 'next'],
             controlsContainer: '.tns-standard-carousel-controls',
-            //autoplayPosition: 'bottom',
             center: true,
-            //gutter: 5,
-            //edgePadding: 50,
 
             responsive: {
                 640: {

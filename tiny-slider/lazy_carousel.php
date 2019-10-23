@@ -65,6 +65,11 @@ include './parts/tiny_slider_nav.php';
         // Lazy carousel
         const tnsLazyCarousel = tns({
 
+            autoplay: true,
+            autoplayButtonOutput: false,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            speed: 1000,
             container: '.tiny-lazy-carousel-wrap',
             items: 1,
             loop: true,

@@ -63,6 +63,7 @@ include './parts/tiny_slider_nav.php';
     // Centred carousel
     const tnsCenteredCarousel = tns({
 
+        speed: 1000,
         container: '.tiny-centered-carousel-wrap',
         items: 1,
         loop: true,
