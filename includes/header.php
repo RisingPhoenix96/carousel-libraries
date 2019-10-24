@@ -15,6 +15,9 @@ include 'functions.php';
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="/assets/carousel/owl.theme.default.min.css">
+    <?php if ($page_info['body_id'] === 'bootstrap-carousel') : ?>
+        <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.css">
+    <?php endif; ?>
     <script src="/content/jquery.js"></script>
 </head>
 

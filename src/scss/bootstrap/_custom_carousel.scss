@@ -1,0 +1,36 @@
+#bootstrap-carousel .carousel {
+
+    .carousel-indicators {
+
+        bottom: -2.5rem;
+
+        li {
+            background-color: #989898;
+            width: 10px;
+            height: 10px;
+            border: 1px solid transparent;
+            border-radius: 100px;
+
+            &:hover {
+                background-color: darken(aquamarine, 40%);
+            }
+        }
+
+        li.active {
+            background-color: darken(aquamarine, 40%);
+        }
+
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+        opacity: 1;
+
+        @include media-query(normal) {
+            display: flex;
+            //background-color: rgba(0, 0, 0, 0.5);
+        }
+    }
+
+}

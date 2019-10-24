@@ -9,7 +9,7 @@ include "../includes/header.php";
 
 ?>
 
-<script src="/bootstrap-carousel/bootstrap.carousel.js"></script>
+<script src="/bootstrap-carousel/bootstrap-4.3.1.js"></script>
 
 <h1 class="banner -owl-carousel-banner">
     Bootstrap Carousel<br />
