@@ -149,20 +149,21 @@ include './parts/bootstrap_slider_nav.php';
 
         $('#carouselExampleControlsAnimated .title').css({
             'position': 'relative',
-            'top': 0 + 'px',
+            'left': 0 + 'px',
             'opacity': 1
         });
         $('#carouselExampleControlsAnimated .desc').css({
             'opacity': 1
         });
         $('#carouselExampleControlsAnimated .button-link').css({
+            'position': 'relative',
             'opacity': 1,
-            'bottom': 90 + 'px'
+            'bottom': 0 + 'px'
         });
 
         $('#carouselExampleControlsAnimated').on('slid.bs.carousel', function() {
             $('#carouselExampleControlsAnimated .title').css({
-                'top': 0 + 'px',
+                'left': 0 + 'px',
                 'opacity': 1
             });
             $('#carouselExampleControlsAnimated .desc').css({
@@ -175,7 +176,7 @@ include './parts/bootstrap_slider_nav.php';
         });
         $('#carouselExampleControlsAnimated').on('slide.bs.carousel', function() {
             $('#carouselExampleControlsAnimated .title').css({
-                'top': -25 + 'px',
+                'left': -25 + 'px',
                 'opacity': 0
             });
             $('#carouselExampleControlsAnimated .desc').css({
