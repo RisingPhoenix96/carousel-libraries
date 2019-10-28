@@ -14,7 +14,7 @@
 <div class="page-wrap">
     <ul>
         <li><a href="/tiny-slider/">Tiny Slider</a></li>
-        <li><a href="#">Bootstrap Slider</a></li>
+        <li><a href="/bootstrap-carousel/">Bootstrap Slider</a></li>
         <li><a href="#">Slick</a></li>
     </ul>
 </div>

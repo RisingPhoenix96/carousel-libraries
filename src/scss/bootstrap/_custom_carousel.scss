@@ -33,6 +33,24 @@
         }
     }
 
+    .bootstrap-side-prev {
+        @include media-query(mega) {
+            left: -134px;
+            border-radius: 0;
+        }
+    }
+
+    .bootstrap-side-next {
+        @include media-query(mega) {
+            right: -132px;
+            border-radius: 0;
+        }
+    }
+
+    .bootstrap-side-translucent {
+        background-color: rgba(#000, .15);
+    }
+
     .slide.card {
         max-width: 295px;
         display: inline-block;
