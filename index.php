@@ -15,7 +15,7 @@
     <ul>
         <li><a href="/tiny-slider/">Tiny Slider</a></li>
         <li><a href="/bootstrap-carousel/">Bootstrap Slider</a></li>
-        <li><a href="#">Slick</a></li>
+        <li><a href="/slick/">Slick</a></li>
     </ul>
 </div>
 

@@ -44,10 +44,10 @@ include './parts/slick_nav.php';
         <img class="image" src="https://via.placeholder.com/400x400.png?text=6" alt="6">
     </div>
 
-    <div class="controls tns-standard-carousel-controls">
+    <!-- <div class="controls tns-standard-carousel-controls">
         <button class="carousel-control centered-carousel-prev prev">◀</button>
         <button class="carousel-control centered-carousel-next next">▶</button>
-    </div>
+    </div> -->
 </div>
 
 <h2 class="carousel-type-title">Thumbnail Carousel - Captions as Thumbnails</h2>
@@ -109,10 +109,10 @@ include './parts/slick_nav.php';
         </div>
     </div>
 
-    <div class="controls tns-standard-carousel-controls">
+    <!-- <div class="controls tns-standard-carousel-controls">
         <button class="carousel-control centered-carousel-prev prev caption-prev">◀</button>
         <button class="carousel-control centered-carousel-next next caption-next">▶</button>
-    </div>
+    </div> -->
 
 </div>
 
@@ -251,12 +251,14 @@ include './parts/slick_nav.php';
                 {
                     breakpoint: 641,
                     settings: {
-                        'slidesToShow': 2,
+                        'centerMode': false,
+                        'slidesToShow': 1,
                     }
                 }, {
 
                     breakpoint: 481,
                     settings: {
+                        'centerMode': false,
                         'slidesToShow': 1,
                     }
 
