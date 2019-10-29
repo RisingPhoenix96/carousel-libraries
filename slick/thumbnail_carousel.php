@@ -44,10 +44,10 @@ include './parts/slick_nav.php';
         <img class="image" src="https://via.placeholder.com/400x400.png?text=6" alt="6">
     </div>
 
-    <!-- <div class="controls tns-standard-carousel-controls">
+    <div class="controls tns-standard-carousel-controls">
         <button class="carousel-control centered-carousel-prev prev">◀</button>
         <button class="carousel-control centered-carousel-next next">▶</button>
-    </div> -->
+    </div>
 </div>
 
 <h2 class="carousel-type-title">Thumbnail Carousel - Captions as Thumbnails</h2>
@@ -109,10 +109,10 @@ include './parts/slick_nav.php';
         </div>
     </div>
 
-    <!-- <div class="controls tns-standard-carousel-controls">
+    <div class="controls tns-standard-carousel-controls">
         <button class="carousel-control centered-carousel-prev prev caption-prev">◀</button>
         <button class="carousel-control centered-carousel-next next caption-next">▶</button>
-    </div> -->
+    </div>
 
 </div>
 
@@ -127,7 +127,7 @@ include './parts/slick_nav.php';
             'slidesToShow': 1,
             'slidesToScroll': 1,
             'fade': true,
-            'dots': true,
+            'dots': false,
             'speed': 1500,
             'arrows': true,
             'prevArrow': $('.controls .prev'),
@@ -164,7 +164,7 @@ include './parts/slick_nav.php';
             'slidesToShow': 3,
             'slidesToScroll': 1,
             'asNavFor': '.carousel-main',
-            'dots': false,
+            'dots': true,
             'centerMode': true,
             'focusOnSelect': true,
             'speed': 1500,
@@ -203,7 +203,7 @@ include './parts/slick_nav.php';
             'slidesToShow': 1,
             'slidesToScroll': 1,
             'fade': true,
-            'dots': true,
+            'dots': false,
             'speed': 1500,
             'arrows': true,
             'prevArrow': $('.caption-prev'),
@@ -240,7 +240,7 @@ include './parts/slick_nav.php';
             'slidesToShow': 1,
             'slidesToScroll': 1,
             'asNavFor': '.carousel-main-captions',
-            'dots': false,
+            'dots': true,
             'centerMode': true,
             'centerPadding': '200px',
             'focusOnSelect': true,
