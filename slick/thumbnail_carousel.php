@@ -1,145 +1,269 @@
 <?php
 include './parts/header.php';
 
-include './parts/tiny_slider_nav.php';
+include './parts/slick_nav.php';
 ?>
 
 <h2 class="carousel-type-title">Thumbnail Carousel</h2>
 
 <div class="wrapper">
-    <div class="carousel -side-arrows tiny-thumbnail-carousel-wrap">
+    <div class="carousel -side-arrows carousel-main">
 
-        <div class="slide" style="border: 0;">
-            <img class="image" src="https://picsum.photos/500/200?random=1"></img>
-            <p class="title">Title 1</p>
-            <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus pariatur nam asperiores tenetur iste sit. Repellendus voluptatem odio ipsa quisquam ullam quis.</p>
-            <a href="#" class="button-link">Read More</a>
+        <div class="slide" style="border:0;">
+            <img class="image" data-lazy="https://picsum.photos/900/450?random=1"></img>
         </div>
 
-        <div class="slide" style="border: 0;">
-            <img class="image" src="https://picsum.photos/500/200?random=2"></img>
-            <p class="title">Title 2</p>
-            <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus pariatur nam asperiores tenetur iste sit. Repellendus voluptatem odio ipsa quisquam ullam quis.</p>
-            <a href="#" class="button-link">Read More</a>
+        <div class="slide" style="border:0;">
+            <img class="image" data-lazy="https://picsum.photos/900/450?random=2"></img>
         </div>
 
-        <div class="slide" style="border: 0;">
-            <img class="image" src="https://picsum.photos/500/200?random=3"></img>
-            <p class="title">Title 3</p>
-            <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus pariatur nam asperiores tenetur iste sit. Repellendus voluptatem odio ipsa quisquam ullam quis.</p>
-            <a href="#" class="button-link">Read More</a>
+        <div class="slide" style="border:0;">
+            <img class="image" data-lazy="https://picsum.photos/900/450?random=3"></img>
         </div>
 
-        <div class="slide" style="border: 0;">
-            <img class="image" src="https://picsum.photos/500/200?random=4"></img>
-            <p class="title">Title 4</p>
-            <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus pariatur nam asperiores tenetur iste sit. Repellendus voluptatem odio ipsa quisquam ullam quis.</p>
-            <a href="#" class="button-link">Read More</a>
+        <div class="slide" style="border:0;">
+            <img class="image" data-lazy="https://picsum.photos/900/450?random=4"></img>
         </div>
 
-        <div class="slide" style="border: 0;">
-            <img class="image" src="https://picsum.photos/500/200?random=5"></img>
-            <p class="title">Title 5</p>
-            <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus pariatur nam asperiores tenetur iste sit. Repellendus voluptatem odio ipsa quisquam ullam quis.</p>
-            <a href="#" class="button-link">Read More</a>
+        <div class="slide" style="border:0;">
+            <img class="image" data-lazy="https://picsum.photos/900/450?random=5"></img>
         </div>
 
-        <div class="slide" style="border: 0;">
-            <img class="image" src="https://picsum.photos/500/200?random=6"></img>
-            <p class="title">Title 6</p>
-            <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus pariatur nam asperiores tenetur iste sit. Repellendus voluptatem odio ipsa quisquam ullam quis.</p>
-            <a href="#" class="button-link">Read More</a>
+        <div class="slide" style="border:0;">
+            <img class="image" data-lazy="https://picsum.photos/900/450?random=6"></img>
         </div>
 
     </div>
 
-    <br />
-
-    <div class="tiny-thumbnail-carousel-thumbnail-wrap">
-        <img class="image" src="https://via.placeholder.com/200x200.png?text=1" alt="1">
-        <img class="image" src="https://via.placeholder.com/200x200.png?text=2" alt="2">
-        <img class="image" src="https://via.placeholder.com/200x200.png?text=3" alt="3">
-        <img class="image" src="https://via.placeholder.com/200x200.png?text=4" alt="4">
-        <img class="image" src="https://via.placeholder.com/200x200.png?text=5" alt="5">
-        <img class="image" src="https://via.placeholder.com/200x200.png?text=6" alt="6">
+    <div class="carousel-thumbnails">
+        <img class="image" src="https://via.placeholder.com/400x400.png?text=1" alt="1">
+        <img class="image" src="https://via.placeholder.com/400x400.png?text=2" alt="2">
+        <img class="image" src="https://via.placeholder.com/400x400.png?text=3" alt="3">
+        <img class="image" src="https://via.placeholder.com/400x400.png?text=4" alt="4">
+        <img class="image" src="https://via.placeholder.com/400x400.png?text=5" alt="5">
+        <img class="image" src="https://via.placeholder.com/400x400.png?text=6" alt="6">
     </div>
 
-    <div class="controls tns-thumbnail-carousel-controls">
+    <div class="controls tns-standard-carousel-controls">
         <button class="carousel-control centered-carousel-prev prev">◀</button>
         <button class="carousel-control centered-carousel-next next">▶</button>
     </div>
+</div>
 
-    <div class="tiny-custom-thumbnails-wrapper"></div>
+<h2 class="carousel-type-title">Thumbnail Carousel - Captions as Thumbnails</h2>
+
+<div class="wrapper">
+
+    <div class="carousel -side-arrows carousel-main-captions">
+
+        <div class="slide" style="border:0;">
+            <img class="image" data-lazy="https://picsum.photos/900/450?random=7"></img>
+        </div>
+
+        <div class="slide" style="border:0;">
+            <img class="image" data-lazy="https://picsum.photos/900/450?random=8"></img>
+        </div>
+
+        <div class="slide" style="border:0;">
+            <img class="image" data-lazy="https://picsum.photos/900/450?random=9"></img>
+        </div>
+
+        <div class="slide" style="border:0;">
+            <img class="image" data-lazy="https://picsum.photos/900/450?random=10"></img>
+        </div>
+
+        <div class="slide" style="border:0;">
+            <img class="image" data-lazy="https://picsum.photos/900/450?random=11"></img>
+        </div>
+
+        <div class="slide" style="border:0;">
+            <img class="image" data-lazy="https://picsum.photos/900/450?random=12"></img>
+        </div>
+
+    </div>
+
+    <div class="carousel-thumbnails-captions">
+        <div class="caption">
+            <p class="title">Caption 1</p>
+            <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus pariatur nam asperiores tenetur iste sit. Repellendus voluptatem odio ipsa quisquam ullam quis.</p>
+        </div>
+        <div class="caption">
+            <p class="title">Caption 2</p>
+            <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus pariatur nam asperiores tenetur iste sit. Repellendus voluptatem odio ipsa quisquam ullam quis.</p>
+        </div>
+        <div class="caption">
+            <p class="title">Caption 3</p>
+            <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus pariatur nam asperiores tenetur iste sit. Repellendus voluptatem odio ipsa quisquam ullam quis.</p>
+        </div>
+        <div class="caption">
+            <p class="title">Caption 4</p>
+            <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus pariatur nam asperiores tenetur iste sit. Repellendus voluptatem odio ipsa quisquam ullam quis.</p>
+        </div>
+        <div class="caption">
+            <p class="title">Caption 5</p>
+            <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus pariatur nam asperiores tenetur iste sit. Repellendus voluptatem odio ipsa quisquam ullam quis.</p>
+        </div>
+        <div class="caption">
+            <p class="title">Caption 6</p>
+            <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus pariatur nam asperiores tenetur iste sit. Repellendus voluptatem odio ipsa quisquam ullam quis.</p>
+        </div>
+    </div>
+
+    <div class="controls tns-standard-carousel-controls">
+        <button class="carousel-control centered-carousel-prev prev caption-prev">◀</button>
+        <button class="carousel-control centered-carousel-next next caption-next">▶</button>
+    </div>
+
 </div>
 
 <script>
     $(function() {
 
-        // Thumbnail carousel
-        const tnsThumbnailCarousel = tns({
+        $('.carousel-main').slick({
 
-            autoplay: true,
-            autoplayButtonOutput: false,
-            autoplayTimeout: 4000,
-            autoplayHoverPause: true,
-            speed: 1000,
-            container: '.tiny-thumbnail-carousel-wrap',
-            items: 1,
-            loop: true,
-            nav: true,
-            navContainer: '.tiny-thumbnail-carousel-thumbnail-wrap',
-            navAsThumbnails: true,
-            navPosition: 'bottom',
-            mouseDrag: false,
-            arrowKeys: false,
-            touch: true,
-            controls: false,
-            controlsContainer: '.tns-thumbnail-carousel-controls',
-            center: true,
+            'autoplay': true,
+            'autoplaySpeed': '3500',
+            'infinite': true,
+            'slidesToShow': 1,
+            'slidesToScroll': 1,
+            'fade': true,
+            'dots': true,
+            'speed': 1500,
+            'arrows': true,
+            'prevArrow': $('.controls .prev'),
+            'nextArrow': $('.controls .next'),
+            'lazyLoad': 'ondemand',
+            'asNavFor': '.carousel-thumbnails',
 
-            responsive: {
-                640: {
-                    items: 2,
-                    gutter: 10,
-                },
-                960: {
-                    controls: true,
-                    items: 1,
-                    edgePadding: 230,
-                    gutter: 20,
+            responsive: [
+
+                {
+                    breakpoint: 769,
+                    settings: {
+                        'slidesToShow': 2,
+                    }
+                }, {
+                    breakpoint: 641,
+                    settings: {
+                        'slidesToShow': 1,
+                    }
+                }, {
+                    breakpoint: 481,
+                    settings: {
+                        'centerMode': false,
+                        'slidesToShow': 1,
+                    }
                 }
-            }
+
+            ]
 
         });
 
-        var thumbnails = tns({
-            loop: false,
-            container: '.tiny-thumbnail-carousel-thumbnail-wrap',
-            items: 6,
-            mouseDrag: true,
-            nav: false,
-            controls: false,
-            gutter: 5,
+        $('.carousel-thumbnails').slick({
 
-            responsive: {
-                640: {
-                    items: 4,
-                },
-                960: {
-                    items: 6,
+            'slidesToShow': 3,
+            'slidesToScroll': 1,
+            'asNavFor': '.carousel-main',
+            'dots': false,
+            'centerMode': true,
+            'focusOnSelect': true,
+            'speed': 1500,
+
+            'responsive': [
+
+                {
+                    breakpoint: 641,
+                    settings: {
+                        'slidesToShow': 2,
+                    }
+                }, {
+
+                    breakpoint: 481,
+                    settings: {
+                        'slidesToShow': 1,
+                    }
+
                 }
-            }
+
+            ]
 
         });
 
-        let prev = $("[data-controls='prev']"),
-            next = $("[data-controls='next']");
+    });
 
-        prev.on('click', function() {
-            thumbnails.goTo('prev');
+    // With captions
+
+    $(function() {
+
+        $('.carousel-main-captions').slick({
+
+            'autoplay': true,
+            'autoplaySpeed': '3500',
+            'infinite': true,
+            'slidesToShow': 1,
+            'slidesToScroll': 1,
+            'fade': true,
+            'dots': true,
+            'speed': 1500,
+            'arrows': true,
+            'prevArrow': $('.caption-prev'),
+            'nextArrow': $('.caption-next'),
+            'lazyLoad': 'ondemand',
+            'asNavFor': '.carousel-thumbnails-captions',
+
+            responsive: [
+
+                {
+                    breakpoint: 769,
+                    settings: {
+                        'slidesToShow': 2,
+                    }
+                }, {
+                    breakpoint: 641,
+                    settings: {
+                        'slidesToShow': 1,
+                    }
+                }, {
+                    breakpoint: 481,
+                    settings: {
+                        'centerMode': false,
+                        'slidesToShow': 1,
+                    }
+                }
+
+            ]
+
         });
-        next.on('click', function() {
-            thumbnails.goTo('next');
+
+        $('.carousel-thumbnails-captions').slick({
+
+            'slidesToShow': 1,
+            'slidesToScroll': 1,
+            'asNavFor': '.carousel-main-captions',
+            'dots': false,
+            'centerMode': true,
+            'centerPadding': '200px',
+            'focusOnSelect': true,
+            'speed': 1500,
+
+            'responsive': [
+
+                {
+                    breakpoint: 641,
+                    settings: {
+                        'slidesToShow': 2,
+                    }
+                }, {
+
+                    breakpoint: 481,
+                    settings: {
+                        'slidesToShow': 1,
+                    }
+
+                }
+
+            ]
+
         });
 
     });
