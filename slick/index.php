@@ -129,10 +129,18 @@ include './parts/slick_nav.php';
             'slidesToShow': 1,
             'slidesToScroll': 1,
             'dots': true,
-            'speed': 1500,
+            'speed': 500,
             'arrows': true,
             'prevArrow': $('.slick-standard-controls .prev'),
             'nextArrow': $('.slick-standard-controls .next'),
+            'mobileFirst': true,
+
+            responsive: [{
+                breakpoint: 960,
+                settings: {
+                    'speed': 1500,
+                }
+            }]
 
         });
 

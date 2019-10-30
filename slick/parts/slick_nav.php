@@ -6,6 +6,7 @@
         echo cgit_nav_link('./centered_carousel.php', 'Centered Carousel');
         echo cgit_nav_link('./lazy_carousel.php', 'Lazy Carousel');
         echo cgit_nav_link('./thumbnail_carousel.php', 'Thumbnail Carousel');
+        echo cgit_nav_link('./grid.php', 'Grid (test)');
         ?>
     </ul>
 </nav>

@@ -139,6 +139,7 @@ include './parts/tiny_slider_nav.php';
             touch: true,
             controls: true,
             controlsContainer: '.tns-standard-controls',
+            preventScrollOnTouch: 'force',
 
         });
 
